@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Foto-floky</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="navbar__logo"><img src="./img/logoipsum.png" alt="logo Ipsum" width="170" height="80"></a>
+            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                <li class="nav__item">
+                    <a class="nav__link" href="./index.html">Úvod</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./funkce.html">Galerie 1</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_3">Galerie 2</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_4">Kontakt</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./kontakt.html">Produkt</a>
+                </li>
+            </menu>
+            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)"></a></div>
+        </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            document.querySelector("body").onclick = (e) => {
+                const menus = document.querySelectorAll(".hamburger-menu-list");
+                for (const menu of menus) {
+                    menu.classList.add("navbar__menu--hidden");
+                }
+            }
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    event.stopPropagation()
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
+    </header>
+    <main>
+        <section class="nadpis">
+            <div class="nadpis__h1">
+                <h1>Vítejte na našich stránkách</h1>
+            </div>
+            <div>
+                <img src="./img/lidi u stolu.jpg" alt="Team meeting">
+            </div>
+        </section>
+        <section class="onas">
+                <div>
+                    <h2>Něco málo o nás</h2>
+                    <img src="./img/ruce.jpg" alt="Složené ruce">
+                    <p>Jsme parta kamarádů začínající s profesionálním focením. S focením jsme společně začali již na střední škole a nasbírali mnoho zkušeností.
+                        Rádi fotíme vše možné i nemožné. Dokonce jsme se podíleli na postprodukci několika filmů v různých oblastech a reklamních materiálů k ním. V našem týmu se každý primárně zaměřuje na jednu část procesu tvorby fotografií, ale každý umí od všeho něco. Dovolujeme si tvrdit, že je s námi sranda a umíme se poprat prakticky s jakýmkoliv zadáním.</p>
+                </div>
+        </section>
+        <section class="prace">
+            <h2>Práce s námi</h2>
+            <div class="prace__sloupec">
+                <div class="prace__section">
+                    <img src="./img/fajfka.png" alt="fajfka">
+                    <p>Umíme pracovat v jakémkoliv prostředí</p>
+                </div>
+                <div class="prace__section">
+                    <img src="./img/fajfka.png" alt="fajfka">
+                    <p>Máme profesionální přístup</p>
+                </div>
+                <div class="prace__section">
+                    <img src="./img/fajfka.png" alt="fajfka">
+                    <p>Vaše přání je naším rozkazem</p>
+                </div>
+            </div>
+            <div class="prace__sloupec">
+                <div class="prace__section">
+                    <img src="./img/fajfka.png" alt="fajfka">
+                    <p>Jsme spolehliví</p>
+                </div>
+                <div class="prace__section">
+                    <img src="./img/fajfka.png" alt="fajfka">
+                    <p>Nebojíme se žádné výzvy</p>
+                </div>
+                <div class="prace__section">
+                    <img src="./img/fajfka.png" alt="fajfka">
+                    <p>Všechny informace se dozvíte předem</p>
+                </div>
+            </div>
+        </section>
+        <section class="chcete">
+            <div>
+                <h2>Chcete nás?</h2>
+                <p>U nás vždy říkáme, že je vše jen o domluvě.</p>
+                <p>Pokud by jste o nás tedy měli zájem kontaktujte nás!!!</p>
+                <p>Ale pokud si stále nejste jisti našemi schopnostmi, nahlédněte do jedné z našich <a href="#">GALERIÍ</a></p>
+                <p>Kontaktujte nás buď zde: <a href="mailto: mial.nahodneho.cava@gmail.com">e-mail</a>
+                    nebo zde: <a href="tel: 321 654 987">tel: 321 654 987</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div class="footer__logo">
+                <a href="./index.html"><img src="./img/logoipsum.png" alt="Logo"></a>
+            </div>
+            <div class="footer__sides">
+                <h3>Na stránce:</h3>
+               <div>
+                    <a href="./index.html">Homepage</a>
+                    <a href="#">Galerie 1</a>
+                    <a href="#">Galerie 2</a>
+                    <a href="#">Kontakt</a>
+                    <a href="#">Produkt</a>
+               </div>
+            </div>
+            <div class="footer__social">
+                <h3>Sociální sítě</h3>
+                <div>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer__linka"></div>
+            <div class="footer__podcarou">
+                <p>Vytvořeno:<a href="#">FS s.r.o</a> 2023</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
