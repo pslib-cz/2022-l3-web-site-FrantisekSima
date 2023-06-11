@@ -50,7 +50,7 @@ header {
 }
 
 *, *:visited {
-    color: var(--darkblue-color);
+    /* color: var(--darkblue-color); */
     margin: 0;
     padding: 0;
     text-decoration: none;
