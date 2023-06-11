@@ -125,3 +125,16 @@ footer a {
     font-size: 10px;
     text-align: right;
 }
+@media only screen and (min-width: 1024px) {
+    .footer__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly left;
+    }
+    .footer__social {
+        margin-left: 8em;
+    }
+    .footer__podcarou p {
+        font-size: 14px;
+    }
+}

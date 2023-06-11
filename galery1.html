@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-autoplay.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-comments.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-fullscreen.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-rotate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-share.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/galery.css">
+    <title>Foto-floky Galerie</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="navbar__logo"><img src="./img/logoipsum.png" alt="Logo této webové stránky" width="170" height="80"></a>
+            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                <li class="nav__item">
+                    <a class="nav__link" href="./index.html">Úvod</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./funkce.html">Galerie 1</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_3">Galerie 2</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_4">Kontakt</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./kontakt.html">Produkt</a>
+                </li>
+            </menu>
+            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)"></a></div>
+        </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            document.querySelector("body").onclick = (e) => {
+                const menus = document.querySelectorAll(".hamburger-menu-list");
+                for (const menu of menus) {
+                    menu.classList.add("navbar__menu--hidden");
+                }
+            }
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    event.stopPropagation()
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
+    </header>
+    <main>
+        <div class="gallery__head">
+            <h1>Vítejte v naší galerii</h1>
+            <h2>Toto je 1. galerie</h2>
+            <p class="gallery__head--text">V této galerii naleznete ukázkové fotografie z našich předchozích focení závodů</p>
+        </div>
+        <div class="gallery" id="gallery">
+        <a class="img" href="./img/d1.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d1.jpg">
+            <img src="./img/d1.jpg" alt="Obrázek zderby, na kterém sjou staré auta">
+        </a>
+        <a class="img" href="./img/d2.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d2.jpg">
+            <img src="./img/d2.jpg" alt="Obrázek zderby, s červeným autem a hodně písku">
+        </a>
+        <a class="img" href="./img/d3.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d3.jpg">
+            <img src="./img/d3.jpg" alt="Obrázek zderby, s teréním autem v dešti">
+        </a>
+        <a class="img" href="./img/d4.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d4.jpg">
+            <img src="./img/d4.jpg" alt="Obrázek zderby, s teréním autem v písku">
+        </a>
+        <a class="img" href="./img/d5.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d5.jpg">
+            <img src="./img/d5.jpg" alt="Obrázek zderby, s polepeným autem a hodně hlíny">
+        </a>
+        <a class="img" href="./img/d6.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d6.jpg">
+            <img src="./img/d6.jpg" alt="Obrázek zderby, na kterém je modré auto v ringu">
+        </a>
+        <a class="img" href="./img/d7.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d7.jpg">
+            <img src="./img/d7.jpg" alt="Obrázek zderby, na kterém je auto na pouštní duně">
+        </a>
+        <a class="img" href="./img/d8.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d8.jpg">
+            <img src="./img/d8.jpg" alt="Obrázek zderby, na kterém je auto na horské cestě">
+        </a>
+        <a class="img" href="./img/d1.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d1.jpg">
+            <img src="./img/d1.jpg">
+        </a>
+        <a class="img" href="./img/d2.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d2.jpg">
+            <img src="./img/d2.jpg">
+        </a>
+        <a class="img" href="./img/d3.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d3.jpg">
+            <img src="./img/d3.jpg">
+        </a>
+        <a class="img" href="./img/d4.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d4.jpg">
+            <img src="./img/d4.jpg">
+        </a>
+        <a class="img" href="./img/d5.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d5.jpg">
+            <img src="./img/d5.jpg">
+        </a>
+        <a class="img" href="./img/d6.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d6.jpg">
+            <img src="./img/d6.jpg">
+        </a>
+        <a class="img" href="./img/d7.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d7.jpg">
+            <img src="./img/d7.jpg">
+        </a>
+        <a class="img" href="./img/d8.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d8.jpg">
+            <img src="./img/d8.jpg">
+        </a>
+        <a class="img" href="./img/d1.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d1.jpg">
+            <img src="./img/d1.jpg">
+        </a>
+        <a class="img" href="./img/d2.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d2.jpg">
+            <img src="./img/d2.jpg">
+        </a>
+        <a class="img" href="./img/d3.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d3.jpg">
+            <img src="./img/d3.jpg">
+        </a>
+        <a class="img" href="./img/d4.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d4.jpg">
+            <img src="./img/d4.jpg">
+        </a>
+        <a class="img" href="./img/d5.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d5.jpg">
+            <img src="./img/d5.jpg">
+        </a>
+        <a class="img" href="./img/d6.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d6.jpg">
+            <img src="./img/d6.jpg">
+        </a>
+        <a class="img" href="./img/d7.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d7.jpg">
+            <img src="./img/d7.jpg">
+        </a>
+        <a class="img" href="./img/d8.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d8.jpg">
+            <img src="./img/d8.jpg">
+        </a>
+        <a class="img" href="./img/d1.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d1.jpg">
+            <img src="./img/d1.jpg">
+        </a>
+        <a class="img" href="./img/d2.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d2.jpg">
+            <img src="./img/d2.jpg">
+        </a>
+        <a class="img" href="./img/d3.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d3.jpg">
+            <img src="./img/d3.jpg">
+        </a>
+        <a class="img" href="./img/d4.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d4.jpg">
+            <img src="./img/d4.jpg">
+        </a>
+        <a class="img" href="./img/d5.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d5.jpg">
+            <img src="./img/d5.jpg">
+        </a>
+        <a class="img" href="./img/d6.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d6.jpg">
+            <img src="./img/d6.jpg">
+        </a>
+        <a class="img" href="./img/d7.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d7.jpg">
+            <img src="./img/d7.jpg">
+        </a>
+        <a class="img" href="./img/d8.jpg" data-lg-size="1000-600"
+            data-lg-thumbnail="./img/d8.jpg">
+            <img src="./img/d8.jpg">
+        </a>
+    </div>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/autoplay/lg-autoplay.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/rotate/lg-rotate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/share/lg-share.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script>
+        lightGallery(document.getElementById('gallery'), {
+            plugins: [lgThumbnail, lgZoom, lgFullscreen, lgShare, lgRotate, lgAutoplay],
+            download: true,
+            controls: true,
+            thumbWidth: 100,
+            thumbHeight: 100
+        });
+    </script>
+    </main>
+    <footer>
+        <div>
+            <div class="footer__logo">
+                <a href="./index.html"><img src="./img/logoipsum.png" alt="Logo této webové stránky"></a>
+            </div>
+            <div class="footer__content">
+                <div class="footer__sides">
+                    <h3>Na stránce:</h3>
+                   <div>
+                        <a href="./index.html">Homepage</a>
+                        <a href="#">Galerie 1</a>
+                        <a href="#">Galerie 2</a>
+                        <a href="#">Kontakt</a>
+                        <a href="#">Produkt</a>
+                   </div>
+                </div>
+                <div class="footer__social">
+                    <h3>Sociální sítě</h3>
+                    <div>
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__linka"></div>
+            <div class="footer__podcarou">
+                <p>Vytvořeno:<a href="#">FS s.r.o</a> 2023</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

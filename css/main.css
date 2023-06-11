@@ -5,7 +5,7 @@
     --lightblue-color: rgb(241, 249, 252);
     --blue-color: rgb(45, 66, 117);
     --darkblue-color: rgb(22, 33, 60);
-    --odkaz-fialova: #7400E8;
+    --odkaz-fialova: #0990ff;
 }
 /* sekce 1 */
 .nadpis {
@@ -77,12 +77,19 @@ h2 {
     border: hidden;
     border-radius: 20px;
     background-color: var(--lightgray-color);
-    margin: 24px 0 24px 0;
+    margin: 24px auto 24px auto;
+    max-width: 320px;
 }
 .prace__section p {
     text-align: left;
     margin: auto 15px auto 64px;
 }
+/* slider */
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
 /* sekce 4 */
 .chcete {
     background-color: var(--lightgray-color);
@@ -100,4 +107,21 @@ h2 {
 }
 .chcete a {
     color: var(--odkaz-fialova);
+}
+/* fullscreen */
+@media only screen and (min-width: 1024px) {
+    .nadpis {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        justify-self: center;
+    }
+    .nadpis__h1 {
+        max-width: 300px;
+        max-height: 140px;
+        margin: auto 0 auto 0;
+    }
+    .nadpis img {
+        max-width: 700px;
+    }
 }
