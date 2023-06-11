@@ -86,8 +86,8 @@ h2 {
 }
 /* slider */
 .swiper {
-    width: 600px;
-    height: 300px;
+    max-width: 600px;
+    max-height: 300px;
   }
 
 /* sekce 4 */
